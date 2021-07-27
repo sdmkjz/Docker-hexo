@@ -1,6 +1,4 @@
-# Docker-hexo
-
-##  基于Docker容器的HEXO博客
+# 基于Docker容器的HEXO博客
 
 ### 介绍
 
