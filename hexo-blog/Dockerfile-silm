@@ -6,9 +6,6 @@ WORKDIR /app
 
 RUN npm install -g hexo-cli
 
-# ENTRYPOINT ["hexo","clean"]
-# ENTRYPOINT ["hexo","g"]
-# ENTRYPOINT ["hexo","s"]
 ENV HEXO_SERVER_PORT=4000
 
 EXPOSE 4000
