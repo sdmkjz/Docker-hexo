@@ -12,10 +12,10 @@ Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopr
 
 ### 入门
 
-创建一个新的博客容器，-p为后台运行(可选)--name=为容器名，可自行指定，使用 -v target:/app 指定您的博客位置,-p为端口映射-p 4000:4000前端口可自行更改：
+创建一个新的博客容器，-d为后台运行(可选)--name=为容器名，可自行指定，使用 -v target:/app 指定您的博客位置,-p为端口映射-p 4000:4000前端口可自行更改：
 
 ```shell
-docker run -p --name=hexo \
+docker run -d --name=hexo \
 -v /blog:/app \
 -p 4000:4000 \
 mkjz/hexo:silm
@@ -24,7 +24,7 @@ mkjz/hexo:silm
 
 
 ```shell
-docker run -p --name=hexo \
+docker run -d --name=hexo \
 -v /blog:/app \
 -p 4000:4000 \
 mkjz/hexo:latest
